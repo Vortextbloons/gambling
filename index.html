@@ -9,21 +9,17 @@
 </head>
 
 <body>
+        <h1 id="winner"></h1>
     <main>
         <div>
-            <ul id="display">List Of Numbers</ul>
+            <ul style="font-size: 1.25;" id="display">People In Raffel</ul>
         </div>
-        
         <div>
-            <form id="form">
-                <label for="name">Name</label>
-                <input type="text" id="name" required><br>
-                <label for="times_entered">Times Entered</label>
-                <input type="number" required><br>
-                <button type="submit">Submit</button>
-            </form>
+            <input id="name" class="raffel" type="text" placeholder="Name"> <br>
+            <input id="number_of_tickets" class="raffel" type="number" placeholder="Number Of Tickets"> <br>
+            <button id="raffel" onclick="add_person()">Add To Raffel</button>
         </div>
-    
+        <button id="submit" onclick="submit()">Draw</button>
     </main>
     <script src="index.js"></script>
 </body>
